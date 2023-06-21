@@ -13,7 +13,7 @@ Or
 Use an existing installation and set properties in application.properties file.
 2. create a keyspace and table, I used following cqlsh commands:  
    create keyspace CustomerProfileKeyspace with replication={'class':'SimpleStrategy', 'replication_factor':1};  
-   use CustomerProfileKeyspace;  
+   use Custo[test](src%2Ftest)merProfileKeyspace;  
 
    CREATE TABLE CustomerAccount (  
      externalCustomerId text PRIMARY KEY,  
