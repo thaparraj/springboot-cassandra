@@ -6,14 +6,18 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building'
-                mvn clean test
+                script {
+                    echo 'Building'
+                    mvn clean test
+                }
             }
         }
         stage('Integration Test') {
             steps {
-                echo 'Testing'
-                mvn clean verify
+                script {
+                    echo 'Testing'
+                    mvn clean verify
+                }
             }
         }
         stage('Deploy') {
